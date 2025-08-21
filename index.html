@@ -100,7 +100,7 @@
 
     <!-- Roletas -->
     <div class="mt-12 text-center">
-      <h2 class="text-2xl font-bold text-purple-700 mb-4">🎲 Hora da Sorte!</h2>
+      <h2 class="text-2xl font-bold text-purple-700 mb-4">Roletas!</h2>
       
       <!-- Roleta de brincadeira -->
       <div class="mb-8">
@@ -145,7 +145,7 @@
     const players = ["Miguel", "Gustavo", "Lorenzo", "Gabriel", "Danilo"];
 
     function spinRoulette(type) {
-      let items = type === "game" ? games : players;
+      let items = type === lgame" ? games : players;
       let randomItem = items[Math.floor(Math.random() * items.length)];
       let element = document.getElementById(type === "game" ? "rouletteGame" : "roulettePlayer");
       
@@ -156,9 +156,6 @@
       }, 2000);
     }
 
-    function showFriendInfo(friend) {
-      alert("Abriria modal com informações de " + friend); 
-    }
   </script>
 </body>
 </html>
